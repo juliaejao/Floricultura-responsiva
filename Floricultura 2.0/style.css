@@ -1,0 +1,313 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background:  #b8ffc3;
+	padding: 20px 0;
+	justify-content: center;
+	width: 100%;
+}
+
+.caixa {
+	position: static;
+	width: 100%;
+	margin: 0 auto;
+}
+
+nav {
+	position: static;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #18b3be;
+	text-decoration: underline;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto ;
+}
+	 
+
+.produtos li {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #0bc28b;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #000000;
+}
+
+.produtos li:active {
+    border-color: #088C19;    
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+	background: linear-gradient(#ff4242,#ffb896 );
+    text-align: center;
+    background-color: #83ffc1;
+    padding: 5px 0;
+}
+
+footer img {
+    max-width: 300px;
+    height: 300px;
+}
+
+.copyright {
+    color: #000000;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/* main {
+	
+} */
+
+form {
+	margin: 40px 0;
+	text-align: center;
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+	text-align: center;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:100%;
+	padding: 15px 0;
+	background: rgb(255, 83, 83);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+.banner {
+	width:100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.principal {
+	padding: 3em 0;
+	background: #fdffa0;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient( #fdffa0, #ff4242);
+}
+
+.mapa-conteudo {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.porque {
+	padding: 1em 0;
+	background: #ff4242;
+}
+
+.conteudo-porque {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-porque {
+	text-align: left;
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "🟊";
+}
+
+.imagem-porque {
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	padding-top: 10%;
+	height: auto;
+}
+
+.imagem-porque:hover {
+	opacity: 0.3;
+}
+
+.video {
+	width: 500px;
+	height: 500px;
+	margin: 2em auto;
+	padding-top: 15%;
+}
+
+
+@media screen and (max-width:480px) {
+	header, .caixa, .banner, footer, .principal, .conteudo-porque, .mapa, .mapa-conteudo, .porque{
+		width: 500px;
+		}
+}
+
+ h1 {
+	text-align: center;
+ }
+
+ nav{
+	position: static;
+ }
+
+ ul{
+	text-align: center;
+ } 
+
+ .lista-porque, .imagem-porque {
+	width: 100%;
+ }
+
+ @media screen and (max-width: 480px) {
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+		text-align: center;
+		justify-content: center;
+		width: 500px;
+    }
+
+    .produtos li {
+        width: 500px;
+        margin-bottom: 20px;
+		text-align: center;
+		justify-content: center;
+    }
+}
+
+@media screen and (max-width:480px) {
+	form, .enviar{
+		width: 500px;
+		text-align: center; 
+		justify-content: center;
+		}
+
+	
+}
